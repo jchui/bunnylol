@@ -23,12 +23,13 @@ export const viewHelpPage: () => void = function () {
     { data: "command", title: "Command" },
     { data: "name", title: "Name" },
     { data: "url", title: "URL" },
+    { data: "category", title: "Category" },
   ];
   // $FlowFixMe - jQuery import
   $("#help-table").DataTable({
     data: data,
     columns: columns,
-    order: [[1, "asc"]],
+    order: [[3, "asc"]],
     paging: false,
   });
 };

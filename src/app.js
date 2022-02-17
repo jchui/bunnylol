@@ -1,5 +1,4 @@
 // @flow strict
-
 import type { CommandType } from "./commands.js";
 
 import { COMMANDS } from "./commands.js";
