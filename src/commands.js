@@ -111,8 +111,8 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
   },
   pv: {
     name: "Amazon Prime Video",
-    url: "https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1",
-    searchurl: "https://www.amazon.com/s?i=instant-video&ref=nb_sb_noss_2&k=",
+    url: "https://www.amazon.co.uk/Amazon-Video/",
+    searchurl: "https://www.amazon.co.uk/s?i=instant-video&ref=nb_sb_noss_2&k=",
   },
   wiki: {
     name: "Wikipedia",
