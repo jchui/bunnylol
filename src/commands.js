@@ -150,7 +150,7 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
     url: "https://outlook.office.com/mail/",
     category: "Mail",
   },
-  dl: {
+  db: {
     name: "Dribbble",
     url: "https://dribbble.com",
     searchurl: "https://dribbble.com/search/",
