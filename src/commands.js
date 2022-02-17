@@ -26,6 +26,8 @@ export type CommandNames =
   | "wiki"
   | "g"
   | "kz"
+  | "nhs"
+  | "ol"
   | "DEFAULT";
 
 export type CommandDataTableType = {|
@@ -136,6 +138,16 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
     name: "Kaizen",
     url: "http://kaizenep.com",
     category: "Medical",
+  },
+  nhs: {
+    name: "NHS Portal",
+    url: "https://portal.nhs.net",
+    category: "Medical",
+  },
+  ol: {
+    name: "Outlook",
+    url: "https://outlook.office.com/mail/",
+    category: "Mail",
   },
   DEFAULT: {
     name: "Default - Google Search",
