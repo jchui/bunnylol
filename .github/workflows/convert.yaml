@@ -2,12 +2,12 @@ name: Convert BunnyLOL JavaScript files for Browser
 on:
   push:
     branches:
-        - master
+      - master
 
 jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@master
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
@@ -25,4 +25,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./
-
