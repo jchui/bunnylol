@@ -16,6 +16,7 @@ export const viewHelpPage: () => void = function () {
         name: cmdData.name,
         url: cmdData.url,
         command: command,
+        category: cmdData.category,
       };
     }
   );
