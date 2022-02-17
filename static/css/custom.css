@@ -5,9 +5,29 @@ body {
 }
 
 .mainTableDiv {
-  margin: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+table {
+  border: 0;
 }
 
 table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting {
   background-image: none;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  border: none;
+}
+
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+  font-size: 14px;
+  padding-left: 20px;
 }
