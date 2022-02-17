@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-It replaces your primary search engine for every new tab that is opened, and enables you to assign custom commands to access frequently visited sites.
+It replaces your primary search engine for every new tab that is opened and enables you to assign custom commands to access frequently visited sites.
 </p>
 
 <hr />
