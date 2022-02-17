@@ -5,15 +5,28 @@
     "build": "babel src/ -d compiled/",
     "bundle": "rollup compiled/app.js -o bundle.js -f cjs --compact",
     "minify": "minify --mangle bundle.js -o main.js",
-    "flow": "flow"
+    "flow": "flow",
+    "format": "npx prettier --write ."
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
     "@babel/preset-flow": "^7.10.4",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
     "babel-minify": "^0.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "express": "^4.17.1",
     "flow-bin": "^0.132.0",
+    "prettier": "2.5.1",
+    "prettier-eslint": "^13.0.0",
     "rollup": "^2.26.10",
     "rollup-plugin-terser": "^5.3.1"
   }
