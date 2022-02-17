@@ -28,6 +28,7 @@ export type CommandNames =
   | "kz"
   | "nhs"
   | "ol"
+  | "db"
   | "DEFAULT";
 
 export type CommandDataTableType = {|
@@ -148,6 +149,12 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
     name: "Outlook",
     url: "https://outlook.office.com/mail/",
     category: "Mail",
+  },
+  dl: {
+    name: "Dribbble",
+    url: "https://dribbble.com",
+    searchurl: "https://dribbble.com/search/",
+    category: "Design",
   },
   DEFAULT: {
     name: "Default - Google Search",
