@@ -31,6 +31,7 @@ export type CommandNames =
   | "db"
   | "al"
   | "bl"
+  | "pw"
   | "DEFAULT";
 
 export type CommandDataTableType = {|
@@ -165,8 +166,13 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
   },
   bl: {
     name: "jchui bunnylol",
-    url: "jchui.github.io/bunnylol",
+    url: "https://jchui.github.io/bunnylol",
     category: "Search",
+  },
+  pw: {
+    name: "Patchwork Health",
+    url: "https://app.patchwork.health/shifts",
+    category: "Medical",
   },
   DEFAULT: {
     name: "Default - Google Search",
