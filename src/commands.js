@@ -30,6 +30,7 @@ export type CommandNames =
   | "ol"
   | "db"
   | "al"
+  | "bl"
   | "DEFAULT";
 
 export type CommandDataTableType = {|
@@ -161,6 +162,11 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
     name: "Anaesthetic Logbook",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSfRhY3pg_lgrP_GKhr9ch1ix_32ZdFGDfWdGn7dit01JdAyYw/viewform",
     category: "Medical",
+  },
+  bl: {
+    name: "jchui bunnylol",
+    url: "jchui.github.io/bunnylol",
+    category: "Search",
   },
   DEFAULT: {
     name: "Default - Google Search",
