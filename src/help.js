@@ -14,7 +14,7 @@ export const viewHelpPage: () => void = function () {
       const cmdData = COMMANDS[command];
       return {
         name: cmdData.name,
-        url: cmdData.url,
+        url: '<a href="' + cmdData.url + '">' + cmdData.url + "</a>",
         command: command,
         category: cmdData.category,
       };
@@ -23,14 +23,7 @@ export const viewHelpPage: () => void = function () {
   const columns: Array<ColumnDataTableType> = [
     { data: "command", title: "Command" },
     { data: "name", title: "Name" },
-    {
-      data: "url",
-      title: "URL",
-      render: function (data, type, row, meta) {
-        data = '<a href="' + data + '">' + data + "</a>";
-        return data;
-      },
-    },
+    { data: "url", title: "URL" },
     { data: "category", title: "Category" },
   ];
   // $FlowFixMe - jQuery import
