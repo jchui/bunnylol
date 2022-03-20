@@ -161,7 +161,7 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
   },
   al: {
     name: "Anaesthetic Logbook",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSfRhY3pg_lgrP_GKhr9ch1ix_32ZdFGDfWdGn7dit01JdAyYw/viewform",
+    url: "https://forms.gle/sqQX8zA1te85BZ1H8",
     category: "Medical",
   },
   bl: {
