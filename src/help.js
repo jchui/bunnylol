@@ -27,10 +27,7 @@ export const viewHelpPage: () => void = function () {
       data: "url",
       title: "URL",
       render: function (data, type, row, meta) {
-        if (type === "display") {
-          data = '<a href="' + data + '">' + data + "</a>";
-        }
-
+        data = '<a href="' + data + '">' + data + "</a>";
         return data;
       },
     },
