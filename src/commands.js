@@ -29,6 +29,9 @@ export type CommandNames =
   | "nhs"
   | "ol"
   | "db"
+  | "al"
+  | "bl"
+  | "pw"
   | "DEFAULT";
 
 export type CommandDataTableType = {|
@@ -155,6 +158,21 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
     url: "https://dribbble.com",
     searchurl: "https://dribbble.com/search/",
     category: "Design",
+  },
+  al: {
+    name: "Anaesthetic Logbook",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfRhY3pg_lgrP_GKhr9ch1ix_32ZdFGDfWdGn7dit01JdAyYw/viewform",
+    category: "Medical",
+  },
+  bl: {
+    name: "jchui bunnylol",
+    url: "https://jchui.github.io/bunnylol",
+    category: "Search",
+  },
+  pw: {
+    name: "Patchwork Health",
+    url: "https://app.patchwork.health/shifts",
+    category: "Medical",
   },
   DEFAULT: {
     name: "Default - Google Search",
