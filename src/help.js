@@ -23,7 +23,17 @@ export const viewHelpPage: () => void = function () {
   const columns: Array<ColumnDataTableType> = [
     { data: "command", title: "Command" },
     { data: "name", title: "Name" },
-    { data: "url", title: "URL" },
+    {
+      data: "url",
+      title: "URL",
+      render: function (data, type, row, meta) {
+        if (type === "display") {
+          data = '<a href="' + data + '">' + data + "</a>";
+        }
+
+        return data;
+      },
+    },
     { data: "category", title: "Category" },
   ];
   // $FlowFixMe - jQuery import
